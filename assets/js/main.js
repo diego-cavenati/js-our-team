@@ -42,3 +42,14 @@ const staff = [
     image : "barbara-ramos-graphic-designer.jpg",
     }
 ]
+
+// Stampare su console le informazioni di nome, ruolo e la stringa
+for (let i = 0; i< staff.length; i++) {
+    const thisPerson = staff[i];
+
+    for (const key in thisPerson) {
+        const value = thisPerson[key];
+        console.log(key + " : " + value);
+    }
+
+}
