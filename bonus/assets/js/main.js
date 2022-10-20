@@ -18,32 +18,32 @@ const staff = [
     {
     name : "Wayne Barnett",
     role : "Founder & CEO",
-    image : "wayne-barnett-founder-ceo.jpg",
+    image : `<img src="./assets/img/wayne-barnett-founder-ceo.jpg" alt="">`,
     },
     {
     name : "Angela",
     role : "Chief Editor",
-    image : "angela-caroll-chief-editor.jpg",
+    image : `<img src="./assets/img/angela-caroll-chief-editor.jpg" alt="">`,
     },
     {
     name : "Walter gordon",
     role : "Chief Editor",
-    image : "walter-gordon-office-manager.jpg",
+    image : `<img src="./assets/img/walter-gordon-office-manager.jpg" alt="">`,
     },
     {
     name : "Angela Lopez",
     role : "Social Media Manager",
-    image : "angela-lopez-social-media-manager.jpg",
+    image : `<img src="./assets/img/angela-lopez-social-media-manager.jpg" alt="">`,
     },
     {
     name : "Scott Estrada",
     role : "Developer",
-    image : "scott-estrada-developer.jpg",
+    image : `<img src="./assets/img/scott-estrada-developer.jpg" alt="">`,
     },
     {
     name : "Barbara Ramos",
     role : "Graphic designer",
-    image : "barbara-ramos-graphic-designer.jpg",
+    image : `<img src="./assets/img/barbara-ramos-graphic-designer.jpg" alt="">`,
     }
 ]
 
@@ -58,3 +58,5 @@ for (let i = 0; i< staff.length; i++) {
     }
 
 }
+
+// Trasformare la stringa foto in una immagine effettiva
