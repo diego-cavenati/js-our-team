@@ -9,6 +9,10 @@ Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membr
 - BONUS 2: Organizzare i singoli membri in card/schede 
 */
 
+// prendo elemento DOM
+const containerEl = document.querySelector(".container");
+const ulEl = document.querySelector(".elenco");
+
 // Creare l’array di oggetti con le informazioni fornite
 const staff = [
     {
@@ -43,13 +47,14 @@ const staff = [
     }
 ]
 
-// Stampare su console le informazioni di nome, ruolo e la stringa
+// Stampare su console  e nella Dom le informazioni di nome, ruolo e la stringa
 for (let i = 0; i< staff.length; i++) {
     const thisPerson = staff[i];
 
     for (const key in thisPerson) {
         const value = thisPerson[key];
         console.log(key + " : " + value);
+        ulEl.innerHTML += `<li>${key} : ${value}</li>`;
     }
 
 }
