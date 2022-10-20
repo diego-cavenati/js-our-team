@@ -11,7 +11,7 @@ Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membr
 
 // prendo elemento DOM
 const containerEl = document.querySelector(".container");
-const ulEl = document.querySelector(".elenco");
+const rowEl = document.querySelector(".row");
 
 // Creare l’array di oggetti con le informazioni fornite
 const staff = [
@@ -51,11 +51,15 @@ const staff = [
 for (let i = 0; i< staff.length; i++) {
     const thisPerson = staff[i];
 
-    for (const key in thisPerson) {
-        const value = thisPerson[key];
-        console.log(key + " : " + value);
-        ulEl.innerHTML += `<li>${key} : ${value}</li>`;
-    }
+    rowEl.innerHTML += `
+    <div class="col">
+        <div class="card">
+            ${thisPerson.image}
+            <h3>${thisPerson.name}</h3>
+            <h5>${thisPerson.role}</h5>
+        </div>
+    </div>
+    `;
 
 }
 
